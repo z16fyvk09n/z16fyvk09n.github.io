@@ -1,0 +1,107 @@
+body {
+    background-image: url('https://media.giphy.com/media/3ov9k1173PdfJWRsoE/giphy.gif');
+	background-position: center;
+  	background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+    margin:0;
+    padding:0;
+}
+*::-moz-selection{ background: #fff;color: #000;}
+*::selection { background: #fff;color: #000; }
+.bgeffect {
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,0.45);
+	margin:0;
+	padding:0;
+	justify-content: center;
+    text-align:center;
+}
+.content {
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin:auto;
+    left: auto;
+    top:30%;
+    font-family: 'Bellota Text', cursive;
+
+  }
+.content p {
+    font-size:18px;
+    text-shadow: 0px 0px 10px #000;
+    margin:5px;
+}
+.content h1 {
+    font-size:85px;
+    font-family: 'K2D', sans-serif;
+
+    font-weight:700px;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    transition:1s;
+    text-shadow: 0px 0px 30px #9221C2;
+}
+
+.buttons {
+    margin:50px;
+}
+.buttons button {
+    margin:10px 60px 0px;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:160px;
+    font-size:19px;
+    font-family: 'Bellota Text', cursive;
+    background: rgba(0,0,0,0.26);
+    cursor: pointer;
+    outline:none;
+    color:#fff;
+    border:1px solid #fff;
+    border-radius:px;
+}
+.buttons button:hover{
+    background:#fff;
+    color:#9221C2;
+    transition:0.4s;
+}
+.TOS {
+    position:relative;
+    top:30%;
+    font-family: 'Bellota Text', cursive;
+    font-size:10px;
+    color:#fff;
+    text-transform: uppercase;
+}
+.TOS a {
+    text-decoration: underline;
+}
+.owners {
+    position: absolute;
+    text-align:left;
+    font-family:"Roboto";
+    font-size:12px;
+    padding:10px;
+    top:87.5%;
+    margin-left:10px;
+    font-weight:bold;
+  
+  }
+  .owners img {
+    width: 25px;
+    height:25px;
+    border-radius:100%;
+    vertical-align: middle;
+    padding:5px 8px 0px;
+  }
+  .owners a {
+    color:#fff;
+    text-decoration:none;
+  }
+  
