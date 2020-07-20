@@ -19,7 +19,7 @@
                 <div class="formDiv">
                     <p class="writeText">Write your confession : </p>
                     <textarea id="textbox" class="textbox" name="textbox" rows="14" cols="80"></textarea><br>
-                    <div class="g-recaptcha" data-sitekey="6LedoLMZAAAAAH-AB-N6r2ljvv9g4Ndocj4EacOY"></div>
+                    <div style="text-align:center;" class="g-recaptcha" data-sitekey="6LedoLMZAAAAAH-AB-N6r2ljvv9g4Ndocj4EacOY"></div>
                     <button class="submit">SUBMIT</button>
                     <?php
 
@@ -29,7 +29,7 @@
                         function CheckCaptcha($userResponse) {
                                 $fields_string = '';
                                 $fields = array(
-                                    'secret' => '6LedoLMZAAAAABHxPAlmRqWzGSjbUL0KK5jAVrrA',
+                                    'secret' => '6LedoLMZAAAAABHxPAlmRqWzGSjbUL0KK5jAVrrA';
                                     'response' => $userResponse
                                 );
                                 foreach($fields as $key=>$value)
