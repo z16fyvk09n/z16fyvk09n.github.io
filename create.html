@@ -30,8 +30,8 @@
                             function CheckCaptcha($userResponse) {
                                     $fields_string = '';
                                     $fields = array(
-                                        'secret' => '6LedoLMZAAAAABHxPAlmRqWzGSjbUL0KK5jAVrrA';
-                                        'response' => $userResponse
+                                        'secret' => '6LedoLMZAAAAABHxPAlmRqWzGSjbUL0KK5jAVrrA',
+                                        'response' => $userResponse,
                                     );
                                     foreach($fields as $key=>$value)
                                     $fields_string .= $key . '=' . $value . '&';
