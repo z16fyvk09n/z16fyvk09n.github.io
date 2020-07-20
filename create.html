@@ -29,8 +29,7 @@
 
                             function CheckCaptcha($userResponse) {
                                     $fields_string = '';
-                                    $fields = array('secret' => '6LedoLMZAAAAABHxPAlmRqWzGSjbUL0KK5jAVrrA', 'response' => $userResponse);
-    
+                                    $fields = array('secret' => '6LedoLMZAAAAABHxPAlmRqWzGSjbUL0KK5jAVrrA', 'response' => $userResponse);    
                                     foreach($fields as $key=>$value){
                                         $fields_string .= $key . '=' . $value . '&';
                                         $fields_string = rtrim($fields_string, '&');
