@@ -29,13 +29,12 @@
 
                             function CheckCaptcha($userResponse) {
                                     $fields_string = '';
-                                    $fields = array(
-                                        'secret' => 6LedoLMZAAAAABHxPAlmRqWzGSjbUL0KK5jAVrrA,
-                                        'response' => $userResponse,
-                                    );
-                                    foreach($fields as $key=>$value)
-                                    $fields_string .= $key . '=' . $value . '&';
-                                    $fields_string = rtrim($fields_string, '&');
+                                    $fields = array('secret' => '6LedoLMZAAAAABHxPAlmRqWzGSjbUL0KK5jAVrrA', 'response' => $userResponse);
+    
+                                    foreach($fields as $key=>$value){
+                                        $fields_string .= $key . '=' . $value . '&';
+                                        $fields_string = rtrim($fields_string, '&');
+                                    }
 
                                     $ch = curl_init();
                                     curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
